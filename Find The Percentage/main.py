@@ -1,19 +1,10 @@
-Student_Dictionary = {}
-
-n = int(input())
-
-
-for i in range(n):
-    name = input()
-    
-    # for x in range(3):
-    marks = input()
-    Student_Dictionary[name] = marks
-    # print(Student_Dictionary) 
-    
-query_name = input()
-
-if query_name in Student_Dictionary():
-    res = sum(Student_Dictionary[query_name])
-    
-print(res)
+if __name__ == '__main__':
+    n = int(input())
+    student_marks = {}
+    for _ in range(n):
+        name, *line = input().split()
+        scores = list(map(float, line))
+        student_marks[name] = scores
+    query_name = input()
+    result = sum(student_marks[query_name])/3
+    print("{:.2f}".format(result))
