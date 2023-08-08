@@ -1,4 +1,4 @@
-The code snippet you provided appears to be a Unix shell script that reads an expression as input, evaluates it using the `bc` command-line calculator with arbitrary precision, and then formats the result to three decimal places using the `printf` command. Let me break down the code for you:
+ reads an expression as input, evaluates it using the `bc` command-line calculator with arbitrary precision, and then formats the result to three decimal places using the `printf` command.
 
 1. `read expression`: This line of code is used to read a user input and store it in the variable `expression`. The user is expected to enter a mathematical expression.
 
